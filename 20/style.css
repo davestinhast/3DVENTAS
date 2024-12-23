@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    margin: auto;
+}
+
+.banner{
+    background: radial-gradient(#fff, #ffd6d6);
+    padding-right: 6rem;
+    padding-left: 6rem;
+}
+
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 0.6rem 2.3rem;
+    border-radius: 1.5rem;
+    margin: 1rem 0;
+    text-decoration: none;
+}
+
+.btn:hover{
+    transition: 0.5s;
+    background: #563434;
+}
+
+.logo img{
+    width: 12em;
+}
+
+.barra-navegacion{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.barra-navegacion__carrito {
+    max-width: 2em;
+    max-height: 2em;
+    margin-left: 2rem;
+}
+
+.barra-navegacion__menu{
+    flex: 1;
+    text-align: right;
+}
+
+.barra-navegacion__menu ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.barra-navegacion__menu ul li{
+    display: inline-block;
+    padding-left: 1.5em;
+}
+
+.barra-navegacion__menu ul li a{
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.barra-navegacion__menu ul li a:hover{
+    color: #555;
+}
+
+.barra-navegacion__menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #333;
+    transition: width 0.3s ease;
+}
+
+.barra-navegacion__menu ul li a:hover::after{
+    width: 100%;
+}
+
+.fila{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.banner .fila{
+    margin-top: 6rem;
+}
+
+.columna{
+    flex-basis: 50%;
+}
+
+.columna img {
+    max-width: 100%;
+}
+
+.columna h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin: 2rem 0;
+}
+
+.categorias{
+    margin: 4rem 0;
+}
+
+.contenedor{
+    max-width: 100%;
+    padding: 0 12rem;
+}
+
+.contenedor__titulo{
+    align-items: center;
+    padding-left: 27rem;
+    font-size: 30px;
+    color:#555;
+}
+
+.titulo_estilos{
+    border-bottom: #ff523b solid 0.4rem;
+    width: 8%;
+    margin: 0.6rem 0 4rem 32rem;
+    height: 0.4rem;
+    border-radius: 4rem;
+}
+
+.columna2{
+    flex-basis: 30%;
+    min-width: 30%;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.columna2 img{
+    width: 100%;
+}
+
+.columna3{
+    flex-basis: 25%;
+    padding: 1rem;
+    min-width: 12rem;
+    margin-bottom: 3rem;
+    transition: transform 0.5s;
+}
+
+.columna3:hover{
+    transform: translateY(-5px);
+}
+
+.columna3 img{
+    width: 100%;
+}
+
+h4{
+    color: #555;
+    font-weight: normal;
+}
+
+.columna3 p{
+    font-size: 1.5rem;
+}

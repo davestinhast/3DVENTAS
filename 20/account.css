@@ -1,0 +1,96 @@
+:root {
+    --color-principal: #ff523b;
+    --color-secundario: #f4f4f4;
+    --color-texto: #555;
+    --color-destacado: #333;
+    --fuente-principal: 'Roboto Slab', serif;
+    --fuente-secundaria: 'Arial', sans-serif;
+    --ancho-max: 1200px;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-principal);
+    padding: 1.5rem;
+}
+
+.navbar__menu ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+}
+
+.navbar__menu ul li {
+    margin-left: 2rem;
+}
+
+.navbar__menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navbar__shop {
+    width: 2em;
+    height: 2em;
+}
+
+.account {
+    max-width: var(--ancho-max);
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.titulo-seccion {
+    font-size: 2.5rem;
+    color: var(--color-principal);
+    margin-bottom: 2rem;
+}
+
+.account__detalles p {
+    font-size: 1.2rem;
+    color: var(--color-texto);
+    margin: 0.8rem 0;
+}
+
+.account__detalles strong {
+    color: var(--color-destacado);
+}
+
+.btn {
+    padding: 1rem 3rem;
+    background-color: var(--color-principal);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+.btn:hover {
+    background-color: #d4402e;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--color-principal);
+    color: #fff;
+}

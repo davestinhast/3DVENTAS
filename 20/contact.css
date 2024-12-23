@@ -1,0 +1,118 @@
+:root {
+    --color-principal: #ff523b;
+    --color-secundario: #f4f4f4;
+    --color-texto: #555;
+    --color-destacado: #333;
+    --fuente-principal: 'Roboto Slab', serif;
+    --fuente-secundaria: 'Arial', sans-serif;
+    --ancho-max: 1200px;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+.barra-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-principal);
+    padding: 1.5rem;
+}
+
+.barra-navegacion__menu ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+}
+
+.barra-navegacion__menu ul li {
+    margin-left: 2rem;
+}
+
+.barra-navegacion__menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.barra-navegacion__carrito {
+    width: 2em;
+    height: 2em;
+}
+
+.contacto {
+    max-width: var(--ancho-max);
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.seccion__titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-principal);
+    margin-bottom: 3rem;
+}
+
+.contacto__formulario {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 2px solid var(--color-principal);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.grupo-formulario {
+    margin-bottom: 1.5rem;
+}
+
+.grupo-formulario label {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--color-destacado);
+    margin-bottom: 0.5rem;
+}
+
+.grupo-formulario input,
+.grupo-formulario textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.grupo-formulario textarea {
+    resize: vertical;
+}
+
+button.btn {
+    padding: 1rem 3rem;
+    background-color: var(--color-principal);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #d4402e;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--color-principal);
+    color: #fff;
+}
